@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+}
+
+
+.head {
+    background-image: url('bg-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.a {
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    margin: auto;
+}
+
+.b {
+    margin: auto;
+}
+
+
+#text_height1 {
+    font-size: 30px;
+}
+#text_height2 {
+    font-size: 16px;
+    margin: auto;
+    color: white;
+}
+#height {
+    display: flex;
+    width: 400px;
+    height: 200px;
+}
+
+.div2{
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
