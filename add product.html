@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div><H1>Форма добавления товара</H1></div>
+<div>
+    <label for="Name">Название</label>
+    <input
+            type="text"
+            id="Name"
+            placeholder="Прим: Гаечные ключи"
+    >
+</div>
+
+
+<div>
+    <form>
+        <label for="Katrgor">Категория:</label>
+        <select id="Katrgor" name="fruits">
+            <option>--Выберите одну из категорий--</option>
+            <option value="Prod">Продукты</option>
+            <option value="Tehn">Техника</option>
+            <option value="Decor">Украшения</option>
+            <option value="Home">Товары для дома</option>
+            <option value="Сloth">Одежда</option>
+        </select>
+    </form>
+</div>
+
+
+<div>
+    <label for="cost">Стоимость,руб</label>
+    <input
+            type="number"
+            id="cost"
+            placeholder="Введите стоимость"
+    >
+</div>
+
+
+<div>
+    <label for="count">Количество</label>
+    <input
+            type="number"
+            id="count"
+            placeholder="Введите количество"
+    >
+</div>
+
+
+<div>
+    Есть скидка?
+    <div>
+        <input type="radio" id="No" name="Prom" value="No" checked />
+        <label for="No">Нет</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Yes" name="Prom" value="Yes" />
+        <label for="Yes">Да</label>
+    </div>
+</div>
+
+
+<div >
+    Особенности
+    <div><input type="checkbox" name="Osob" value="B/U">Б/У</div>
+    <div><input type="checkbox" name="Osob" value="Hrup">Хрупкий</div>
+</div>
+<div>
+    Описание
+    <div><textarea rows="10" cols="45" name="text" placeholder="Введите описание"></textarea></div>
+</div>
+
+</body>
+</html>
