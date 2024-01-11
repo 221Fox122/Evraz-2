@@ -1,13 +1,13 @@
-// const NameDom= document.getElementById('Name')
-// const KategorDom= document.getElementById('Kategor')
-// const costDom= document.getElementById('cost')
-// const countDom= document.getElementById('count')
-// const YesDom= document.getElementById('Yes')
-// const NoDom= document.getElementById('No')
-// const HrupDom= document.getElementById('Hrup')
-// const BUDom= document.getElementById('B/U')
-//
-// let prods= []
+const NameDom= document.getElementById('Name')
+const KategorDom= document.getElementById('Kategor')
+const costDom= document.getElementById('cost')
+const countDom= document.getElementById('count')
+const YesDom= document.getElementById('Yes')
+const NoDom= document.getElementById('No')
+const HrupDom= document.getElementById('Hrup')
+const BUDom= document.getElementById('B/U')
+
+let prods= []
 //
 // if(NameDom && KategorDom && costDom && countDom && YesDom && NoDom   ) {
 //     prods = localStorage.getItem('prods')
