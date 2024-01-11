@@ -3,77 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field > * {
+            width: 350px;
+        }
+        .form-field input:not([type="checkbox"], [type="radio"]), .form-field select {
+            width: 350px;
+        }
+    </style>
 </head>
 <body>
-<div><H1>Форма добавления товара</H1></div>
-<div>
-    <label for="Name">Название</label>
-    <input
-            type="text"
-            id="Name"
-            placeholder="Прим: Гаечные ключи"
-    >
+<div class="form-field"><H1>Форма добавления товара</H1></div>
+<div class="form-field">
+    <div>
+        <label for="Name">Название</label>
+    </div>
+    <div>
+        <input
+                type="text"
+                id="Name"
+                placeholder="Прим: Гаечные ключи"
+        >
+    </div>
 </div>
 
 
-<div>
+<div class="form-field">
     <form>
-        <label for="Katrgor">Категория:</label>
-        <select id="Katrgor" name="fruits">
-            <option>--Выберите одну из категорий--</option>
-            <option value="Prod">Продукты</option>
-            <option value="Tehn">Техника</option>
-            <option value="Decor">Украшения</option>
-            <option value="Home">Товары для дома</option>
-            <option value="Сloth">Одежда</option>
-        </select>
+        <div>
+            <label for="Kategor">Категория</label>
+        </div>
+        <div>
+            <select id="Kategor" name="fruits">
+                <option>--Выберите одну из категорий--</option>
+                <option value="Prod">Продукты</option>
+                <option value="Tehn">Техника</option>
+                <option value="Decor">Украшения</option>
+                <option value="Home">Товары для дома</option>
+                <option value="Сloth">Одежда</option>
+            </select>
+        </div>
     </form>
 </div>
 
 
-<div>
-    <label for="cost">Стоимость,руб</label>
-    <input
+<div class="form-field">
+    <div>
+        <label for="cost">Стоимость,руб</label>
+    </div>
+    <div>
+        <input
             type="number"
             id="cost"
             placeholder="Введите стоимость"
-    >
+        >
+    </div>
 </div>
 
 
-<div>
-    <label for="count">Количество</label>
-    <input
-            type="number"
-            id="count"
-            placeholder="Введите количество"
-    >
+<div class="form-field">
+    <div>
+        <label for="count">Количество</label>
+    </div>
+    <div>
+        <input
+                type="number"
+                id="count"
+                placeholder="Введите количество"
+        >
+    </div>
 </div>
 
 
-<div>
+<div class="form-field">
     Есть скидка?
     <div>
         <input type="radio" id="No" name="Prom" value="No" checked />
         <label for="No">Нет</label>
-    </div>
-
-    <div>
         <input type="radio" id="Yes" name="Prom" value="Yes" />
         <label for="Yes">Да</label>
     </div>
+
 </div>
 
 
-<div >
+<div class="form-field">
     Особенности
-    <div><input type="checkbox" name="Osob" value="B/U">Б/У</div>
-    <div><input type="checkbox" name="Osob" value="Hrup">Хрупкий</div>
-</div>
-<div>
-    Описание
-    <div><textarea rows="10" cols="45" name="text" placeholder="Введите описание"></textarea></div>
+    <div><input type="checkbox" name="Osob" id="B/U" value="B/U">Б/У</div>
+    <div><input type="checkbox" name="Osob" id="Hrup" value="Hrup">Хрупкий</div>
 </div>
 
+
+<div class="form-field">
+    Описание
+    <div><textarea rows="10" cols="45" id="Opis" name="text" placeholder="Введите описание"></textarea></div>
+</div>
+
+
+<div class="form-field">
+    <input type="button" name="ADD"  id="ADD" value="Добавить товар">
+</div>
+
+
+</div>
+<script src="add product.js"></script>
+</body>
 </body>
 </html>
