@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var a = document.getElementById('a');
+            var b = document.getElementById('b');
+            var c = document.getElementById('c');
+            var body = document.getElementsByTagName('body')[0];
+            var colors = ['blue','red', 'green'];
+            a.onclick = function() {
+                body.style.backgroundColor = colors[2];
+            };
+            b.onclick = function() {
+                body.style.backgroundColor = colors[1];
+            };
+            c.onclick = function() {
+                body.style.backgroundColor = colors[0];
+            };
+        };
+    </script>
+</head>
+<body>
+<input type="button" id="a" value="Зелёный"/>
+<input type="button" id="b" value="Красный"/>
+<input type="button" id="c" value="Синий"/>
+</body>
+</html>

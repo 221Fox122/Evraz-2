@@ -1,0 +1,19 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+        window.onload = function() {
+            var a = document.getElementById('a');
+            var body = document.getElementsByTagName('body')[0];
+            var colors = ['blue', 'grey', 'black', 'white'];
+            a.onclick = function() {
+                body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            };
+        };
+    </script>
+</head>
+<body>
+<input type="button" id="a" value="Изменить цвет"/>
+</body>
+</html>
